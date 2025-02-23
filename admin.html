@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - GMPS</title>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="handleClientLoad()">
+    <!-- Form untuk menambah berita baru -->
+    <form id="newsForm">
+        <input type="text" id="newsTitle" placeholder="Judul Berita" required />
+        <textarea id="newsContent" placeholder="Isi Berita" required></textarea>
+        <input type="file" id="newsPhoto" accept="image/*" required />
+        <button type="button" onclick="addNews()">Tambah Berita</button>
+    </form>
+
+    <div id="newsContainer"></div>
+
+    <!-- Form untuk menambah admin baru -->
+    <form id="newAdminForm" onsubmit="return addAdmin(event)">
+        <input type="text" id="newAdminId" placeholder="Masukkan ID Admin Baru" required />
+        <button type="submit">Tambah Admin</button>
+    </form>
+
+    <!-- Form untuk menambah foto -->
+    <form id="photoForm" onsubmit="return addPhoto(event)">
+        <input type="file" id="photoFile" required />
+        <button type="submit">Tambah Foto</button>
+    </form>
+
+    <div id="photosContainer"></div>
+</body>
+
+</html>

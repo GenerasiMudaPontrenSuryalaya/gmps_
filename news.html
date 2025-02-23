@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generasi Muda Pontren Suryalaya (GMPS) - Struktur Organisasi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .text-center {
+        text-align: center;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        position: relative;
+        height: 150px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .logo-left {
+        position: absolute;
+        top: 27px;
+        left: 25px;
+        width: 110px;
+        height: auto;
+      }
+
+      .logo-right {
+        position: absolute;
+        top: 27px;
+        right: 25px;
+        width: 112px;
+        height: auto;
+      }
+
+      nav {
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+
+      .video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 10px 0;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function toggleVisibility(id) {
+        const element = document.getElementById(id);
+        if (element.classList.contains("hidden")) {
+          element.classList.remove("hidden");
+        } else {
+          element.classList.add("hidden");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <video autoplay muted loop class="video-background">
+      <source src="BC GMPS.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video tag.
+    </video>
+    <header class="header">
+      <h1>GENERASI MUDA PONTREN SURYALAYA</h1>
+      <h2>Alamat:</h2>
+      <img src="path/to/logo2.png" alt="logo2" class="logo-left" />
+      <img src="path/to/logo1.png" alt="Logo1" class="logo-right" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="struktur.html">Struktur Organisasi</a></li>
+          <li><a href="programs.html">Program dan Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="about-contact.html">Tentang Kami dan Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="struktur">
+        <h2>Struktur Organisasi GMPS</h2>
+        <p>
+          Berikut adalah tautan yang mengarah ke foto struktur organisasi kami:
+        </p>
+        <ul>
+          <li><a href="path/to/struktur1.jpg" target="_blank">DPP</a></li>
+          <li>
+            <a href="javascript:void(0)" onclick="toggleVisibility('struktur2')"
+              >DPD</a
+            >
+            <ul id="struktur2" class="hidden">
+              <li>
+                <a href="path/to/struktur2_1.jpg" target="_blank">Bagian 1</a>
+              </li>
+              <li>
+                <a href="path/to/struktur2_2.jpg" target="_blank">Bagian 2</a>
+              </li>
+              <li>
+                <a href="path/to/struktur2_3.jpg" target="_blank">Bagian 3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="toggleVisibility('struktur3')"
+              >DPC</a
+            >
+            <ul id="struktur3" class="hidden">
+              <li>
+                <a href="path/to/struktur3_1.jpg" target="_blank">Bagian 1</a>
+              </li>
+              <li>
+                <a href="path/to/struktur3_2.jpg" target="_blank">Bagian 2</a>
+              </li>
+              <li>
+                <a href="path/to/struktur3_3.jpg" target="_blank">Bagian 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Generasi Muda Pontren Suryalaya. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

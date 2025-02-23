@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generasi Muda Pontren Suryalaya (GMPS) - Galeri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+      .text-center {
+        text-align: center;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        position: relative;
+        height: 150px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .logo-left {
+        position: absolute;
+        top: 27px;
+        left: 25px;
+        width: 110px;
+        height: auto;
+      }
+
+      .logo-right {
+        position: absolute;
+        top: 27px;
+        right: 25px;
+        width: 112px;
+        height: auto;
+      }
+
+      nav {
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+
+      .video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .responsive-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .fixed-size-img {
+        width: 250px;
+        height: 150px;
+      }
+    </style>
+  </head>
+
+  <body onload="loadGallery()">
+    <video autoplay muted loop class="video-background">
+      <source src="BC GMPS.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video tag.
+    </video>
+    <header class="header">
+      <h1>GENERASI MUDA PONTREN SURYALAYA</h1>
+      <h2>Alamat:</h2>
+      <img src="path/to/logo2.png" alt="logo2" class="logo-left" />
+      <img src="path/to/logo1.png" alt="Logo1" class="logo-right" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">Struktur Organisasi</a></li>
+          <li><a href="programs.html">Program dan Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="about-contact.html">Tentang Kami dan Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h2>Galeri</h2>
+        <h3>Foto</h3>
+        <p>Album foto dari berbagai kegiatan dan program GMPS.</p>
+        <div id="photosContainer" class="gallery">
+          <!-- Foto akan dimuat di sini oleh JavaScript -->
+        </div>
+        <h3>Video Dokumentasi Kegiatan</h3>
+        <div class="video-container">
+          <video controls>
+            <source src="Vi1.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video tag.
+          </video>
+          <video controls>
+            <source src="Vi2.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video tag.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Generasi Muda Pontren Suryalaya. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

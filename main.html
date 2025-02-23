@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generasi Muda Pontren Suryalaya (GMPS) - Main Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <style>
+        /* Dasar */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333232;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            position: relative;
+            height: 150px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .header h2 {
+            font-size: 18px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .logo-left,
+        .logo-right {
+            position: absolute;
+            top: 27px;
+            width: 110px;
+            height: auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .logo-left {
+            left: 25px;
+        }
+        
+        .logo-right {
+            right: 25px;
+        }
+        /* Menu Utama */
+        
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #4caf50;
+            color: white;
+            border-radius: 4px;
+        }
+        
+        nav ul li a::before,
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: rgb(49, 48, 48);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        
+        nav ul li a::after {
+            top: 0;
+            bottom: auto;
+            transform-origin: left;
+        }
+        
+        nav ul li a:hover::before,
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .main-content h2 {
+            margin-bottom: 20px;
+        }
+        
+        .main-content p {
+            line-height: 1.6;
+        }
+        
+        .button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Animasi */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="path/to/logo2.png" alt="logo2" class="logo-left fade-in" />
+        <img src="path/to/logo1.png" alt="Logo1" class="logo-right fade-in" />
+        <h1 class="fade-in">GENERASI MUDA PONTREN SURYALAYA</h1>
+        <h2 class="fade-in">Alamat: Jalan Contoh No. 123, Kota, Provinsi</h2>
+    </header>
+
+    <div class="main-content">
+        <h2>Selamat Datang di GMPS</h2>
+        <p>
+            Kami adalah komunitas yang bergerak di bidang pendidikan, sosial, dan keagamaan. Bergabunglah bersama kami untuk membuat perubahan positif di masyarakat.
+        </p>
+        <a href="index.html" class="button">Pelajari Lebih Lanjut</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Generasi Muda Pontren Suryalaya. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
